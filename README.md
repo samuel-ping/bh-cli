@@ -1,6 +1,6 @@
 # BH CLI (BlurHash Command-Line Interface)
 
-This is a CLI to run BlurHash utility commands in your terminal. This includes encoding image files into a BlurHash string and decoding a BlurHash string into an image file.
+This is a CLI to run BlurHash utility commands in your terminal. This includes encoding image files into a BlurHash string, decoding a BlurHash string into an image file, and validating BlurHash strings.
 
 ## Installation
 ```bash
@@ -10,12 +10,17 @@ $ npm install -g bh-cli
 ## Usage
 ### Encoding an image file to a BlurHash
 ```bash
-$ blurhash encode [options] <image_file>
+$ bh encode [options] <image_file>
 ```
 
 ### Decoding a BlurHash string into an image file
 ```bash
-$ blurhash decode [options] <blurhash>
+$ bh decode [options] <blurhash>
+```
+
+### Validating a BlurHash string
+```bash
+$ bh validate <blurhash>
 ```
 
 ## Contributing

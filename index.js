@@ -1,8 +1,9 @@
 #! /usr/bin/env node
-const { program } = require('commander')
+const { program } = require('commander');
 
-const encode = require('./commands/encode')
-const decode = require('./commands/decode')
+const encode = require('./commands/encode');
+const decode = require('./commands/decode');
+const validate = require('./commands/validate');
 
 program
   .name('bh-cli')
@@ -14,7 +15,7 @@ program.command('encode')
     .argument('<image_file>', 'The image file to convert into a BlurHash string.')
     .option('-x, --componentX <int>', 'Number of horizontal components', '4')
     .option('-y, --componentY <int>', 'Number of vertical components', '4')
-    .action(encode)
+    .action(encode);
 
 program.command('decode')
     .description("Decodes the BlurHash string into an image file and displays it in the terminal.")
@@ -23,6 +24,11 @@ program.command('decode')
     .option('-t, --type <string>', 'Type of the output image file.', 'png')
     .option('-w, --width <int>', 'Width of the output image file.', 32)
     .option('-h, --height <int>', 'Height of the output image file.', 32)
-    .action(decode)
+    .action(decode);
 
-program.parse()
+program.command('validate')
+  .description('Validates the BlurHash string and displays the result in the terminal.')
+  .argument('<blurhash_string>', 'The BlurHash string to validate.')
+  .action(validate);
+
+program.parse();

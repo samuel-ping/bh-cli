@@ -1,4 +1,4 @@
-const { decode: blurhashDecode } = require('blurhash')
+const { decode: blurhashDecode } = require('blurhash');
 const sharp = require('sharp');
 
 async function decode(blurhash, options) {
@@ -11,6 +11,8 @@ async function decode(blurhash, options) {
             channels: 4
         }
     }).toFile(`${options.filename}.${options.type}`);
+
+    console.log("Wrote image to file: ", `${options.filename}.${options.type}`);
 }
 
-module.exports = decode
+module.exports = decode;
