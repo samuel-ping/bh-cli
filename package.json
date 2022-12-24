@@ -1,6 +1,6 @@
 {
   "name": "bh-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "CLI to run the BlurHash commands in your terminal.",
   "main": "index.js",
   "bin": {
