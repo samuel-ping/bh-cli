@@ -9,8 +9,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "blurhash",
+    "bh-cli",
+    "blurhash-command-line-interface",
+    "blurhash-command-line-tool",
+    "blurhash-terminal"
+  ],
+  "author": "Sam Ping <samuel.y.ping@gmail.com> (http://samuel-ping.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samuel-ping/bh-cli/issues"
+  },
+  "homepage": "https://github.com/samuel-ping/bh-cli",
   "dependencies": {
     "blurhash": "^2.0.4",
     "commander": "^9.4.1",
