@@ -1,0 +1,19 @@
+{
+  "name": "blurhash-cli",
+  "version": "1.0.0",
+  "description": "Convert an image to a BlurHash string in your terminal.",
+  "main": "index.js",
+  "bin": {
+    "blurhash": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "blurhash": "^2.0.4",
+    "commander": "^9.4.1",
+    "sharp": "^0.31.3"
+  }
+}
