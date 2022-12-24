@@ -5,8 +5,8 @@ const encode = require('./commands/encode')
 const decode = require('./commands/decode')
 
 program
-  .name('blurhash-cli')
-  .description('CLI to use BlurHash utilities in your terminal.')
+  .name('bh-cli')
+  .description('CLI to run the BlurHash commands in your terminal.')
   .version('1.0.0');
 
 program.command('encode')

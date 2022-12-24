@@ -1,7 +1,7 @@
 {
-  "name": "blurhash-cli",
+  "name": "bh-cli",
   "version": "1.0.0",
-  "description": "Convert an image to a BlurHash string in your terminal.",
+  "description": "CLI to run the BlurHash commands in your terminal.",
   "main": "index.js",
   "bin": {
     "blurhash": "./index.js"
